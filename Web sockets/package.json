@@ -1,0 +1,15 @@
+{
+  "name": "web-sockets",
+  "version": "1.0.0",
+  "description": "Web socket server sending the message back per character with an interval",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ron Gunit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  }
+}
