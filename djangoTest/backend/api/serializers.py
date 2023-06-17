@@ -5,16 +5,17 @@ from products.models import Hotel, Review, Booking
 class HotelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hotel
-        fields = '__all__'  # ['title', 'rating', 'description']
+        fields = ['hotel_id', 'title', 'address', 'price', 'rating', 'description',
+                  'amenities']
 
 
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = '__all__'
+        fields = ['hotel_id', 'rating', 'text']
 
 
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = '__all__'
+        fields = ['hotel_id', 'arrival', 'departure']
